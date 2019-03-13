@@ -2,6 +2,8 @@
 
 Execute SQL with `execute_sql` helper inside your Rails apps. Directly in `rails console`.
 
+ <img src="https://github.com/igorkasyanchuk/execute_sql/blob/master/docs/sample_execute_sql.png?raw=true" width="60%" />
+
 ## Usage
 
 Simply add this gem into your Gemfile.
