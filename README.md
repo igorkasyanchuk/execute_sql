@@ -1,6 +1,6 @@
 # Rails Execute SQL
 
-Execute SQL with `execute_sql` helper inside your Rails apps.
+Execute SQL with `execute_sql` helper inside your Rails apps. Directly in `rails console`.
 
 ## Usage
 
