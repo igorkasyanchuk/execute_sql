@@ -64,6 +64,13 @@ In rails console use helper: `execute_sql "some SQL"`.
 
 Or `ExecuteSql.run "some SQL"` or `ExecuteSQL.run "some SQL"`.
 
+## TODO
+
+- import SQL files
+- travis CI
+- verify with older rails
+- more specs
+
 ## Contributing
 
 You are welcome to contribute.
@@ -71,3 +78,5 @@ You are welcome to contribute.
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+Some pieces of code I took from another my gem: https://github.com/igorkasyanchuk/rails_db.
