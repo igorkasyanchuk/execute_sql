@@ -34,6 +34,16 @@ ExecuteSQL.run "select * from users where age > 50", mode: :raw
 ExecuteSQL.run "truncate table users", mode: :none
 ```
 
+Sample in controller:
+
+```ruby
+class HomeController < ApplicationController
+  def index
+    @users = ExecuteSql.run "select * from users", mode: :raw
+  end
+end
+```
+
 ## Installation
 Add this line to your application's Gemfile:
 
