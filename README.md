@@ -1,8 +1,36 @@
-# ExecuteSql
-Short description and motivation.
+# Rails Execute SQL
+
+Execute SQL with `execute_sql` helper inside your Rails apps.
 
 ## Usage
-How to use my plugin.
+
+Simply add this gem into your Gemfile.
+
+And for example call directly in `rails console`:
+
+```ruby
+execute_sql "select count(*) from users where age > 50"
+
+# see below for additional options.
+```
+
+OR in your models, controllers, or other parts of app:
+
+```ruby
+ExecuteSQL.run "select count(*) from users where age > 50"
+
+# or with different mode
+# default mode: :print
+
+# return single value
+ExecuteSQL.run "select count(*) from users where age > 50", mode: :single
+
+# return array of results
+ExecuteSQL.run "select * from users where age > 50", mode: :raw
+
+# just execute and return nil
+ExecuteSQL.run "truncate table users", mode: :none
+```
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -16,13 +44,18 @@ And then execute:
 $ bundle
 ```
 
-Or install it yourself as:
-```bash
-$ gem install execute_sql
-```
+## Options and modes
+
+You can call:
+
+In rails console use helper: `execute_sql "some SQL"`.
+
+Or `ExecuteSql.run "some SQL"` or `ExecuteSQL.run "some SQL"`.
 
 ## Contributing
-Contribution directions go here.
+
+You are welcome to contribute.
 
 ## License
+
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

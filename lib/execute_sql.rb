@@ -33,11 +33,19 @@ module ExecuteSql
         rows
       when 'single'
         rows.flatten[0]
+      when 'none'
+        nil
       else
         []
       end
+    end
+
+    def run(sql, *args)
+      execute_sql(sql, *args)
     end
   end
 
   extend ConsoleMethods
 end
+
+ExecuteSQL = ExecuteSql
