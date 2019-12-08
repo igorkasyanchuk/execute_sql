@@ -80,3 +80,9 @@ You are welcome to contribute.
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
 Some pieces of code I took from another my gem: https://github.com/igorkasyanchuk/rails_db.
+
+## Contributors
+
+- pjforde1978
+
+Big thank you.

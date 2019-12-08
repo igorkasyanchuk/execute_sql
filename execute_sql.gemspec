@@ -19,6 +19,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rails"
   spec.add_dependency 'terminal-table'
 
-  spec.add_development_dependency "sqlite3", '~> 1.3.13'#, platforms: :ruby
+  spec.add_development_dependency "sqlite3", '~> 1.4'
   spec.add_development_dependency "pry-rails"
 end
