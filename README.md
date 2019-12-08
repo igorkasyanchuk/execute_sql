@@ -24,6 +24,13 @@ ExecuteSQL.run "select count(*) from users where age > 50"
 # or with different mode
 # default mode: :print
 
+# return array of HashWithIndifferentAccess objects
+# please remember that arrays can be manipulated with Enumerable methods, but this is *not* a chainable ARel relation
+ExecuteSQL.run "select * from users where age > 50", mode: :array
+
+# return array of User objects
+ExecuteSQL.run "select * from users where age > 50", mode: :array, klass: User
+
 # return single value
 ExecuteSQL.run "select count(*) from users where age > 50", mode: :single
 
