@@ -10,5 +10,7 @@ class ExecuteSql::Test < ActiveSupport::TestCase
     puts ExecuteSQL.run("SELECT * from users where age > 26", mode: :single)
     puts ExecuteSQL.run("SELECT * from users where age > 26", mode: :raw)
     puts ExecuteSQL.run("SELECT * from users where age > 26", mode: :none)
+    puts ExecuteSQL.run("SELECT * from users where age > 26", mode: :array)
+    puts ExecuteSQL.run("SELECT * from users where age > 26", mode: :array, klass: User)
   end
 end

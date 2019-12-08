@@ -22,13 +22,22 @@ require "execute_sql/railtie"
 module ExecuteSql
   module ConsoleMethods
     
-    def execute_sql(sql, mode: :print)
+    def execute_sql(sql, mode: :print, klass: HashWithIndifferentAccess)
       sql_query = ExecuteSql::SqlQuery.new("#{sql}".strip).execute
       rows = sql_query.data.rows
       cols = sql_query.data.columns
       case mode.to_s
       when 'print'
         puts Terminal::Table.new(rows: rows, headings: cols)
+      when 'array'
+        result = rows.map do |row|
+          record = klass.new
+          cols.each_with_index.map do |col, index|
+            record[col] = row[index]
+          end
+          record
+        end
+        result
       when 'raw'
         rows
       when 'single'
