@@ -90,6 +90,9 @@ Some pieces of code I took from another my gem: https://github.com/igorkasyanchu
 
 ## Contributors
 
-- pjforde1978
+- @pjforde1978
 
 Big thank you.
+
+[<img src="https://github.com/igorkasyanchuk/rails_time_travel/blob/main/docs/more_gems.png?raw=true"
+/>](https://www.railsjazz.com/)
