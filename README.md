@@ -1,5 +1,7 @@
 # Rails Execute SQL
 
+[![RailsJazz](https://github.com/igorkasyanchuk/rails_time_travel/blob/main/docs/my_other.svg?raw=true)](https://www.railsjazz.com)
+
 Execute SQL with `execute_sql` helper inside your Rails apps. Directly in `rails console`.
 
  <img src="https://github.com/igorkasyanchuk/execute_sql/blob/master/docs/sample_execute_sql.png?raw=true" width="60%" />
