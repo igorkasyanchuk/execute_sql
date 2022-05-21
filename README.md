@@ -98,4 +98,4 @@ Some pieces of code I took from another my gem: https://github.com/igorkasyanchu
 Big thank you.
 
 [<img src="https://github.com/igorkasyanchuk/rails_time_travel/blob/main/docs/more_gems.png?raw=true"
-/>](https://www.railsjazz.com/)
+/>](https://www.railsjazz.com/?utm_source=github&utm_medium=bottom&utm_campaign=execute_sql)
